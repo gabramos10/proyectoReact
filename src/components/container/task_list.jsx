@@ -32,7 +32,7 @@ const TaskListComponent = () => {
     return (
         <div>
             <div>
-                your Task:
+                <h1>your Task:</h1>
             </div>
             {/*todo: aplicar un for/map para renderizar una lista*/}
             <TaskComponent task={defaultTask} ></TaskComponent>    
