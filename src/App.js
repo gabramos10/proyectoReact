@@ -7,6 +7,7 @@ import Ejemplo2 from './hooks/Ejemplo2';
 import MiComponenteConContexto from './hooks/Ejemplo3';
 import Ejemplo4 from './hooks/Ejemplo4';
 import GreetingStyled from './components/pure/greetingStyled';
+import Father from './components/container/father';
 
 function App() {
   return (
@@ -18,7 +19,10 @@ function App() {
         <GreetingF name="Gabriel">         
         </GreetingF>
         componente de listado de tareas */}
-        <TaskListComponent></TaskListComponent>
+        {/* <TaskListComponent></TaskListComponent> */}
+
+
+
         {/* <Ejemplo1></Ejemplo1> */}
         {/* <Ejemplo2></Ejemplo2>*/}
         {/* <MiComponenteConContexto></MiComponenteConContexto> */}
@@ -30,6 +34,9 @@ function App() {
         {/* </Ejemplo4> */}
         {/* <GreetingStyled name='martin' ></GreetingStyled> */}
       {/* </header> */}
+
+      {/**gestion de eventos */}
+      <Father></Father>
     </div>
   );
 }
