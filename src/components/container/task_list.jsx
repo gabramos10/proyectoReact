@@ -28,8 +28,22 @@ const TaskListComponent = () => {
     }, [tasks]);
     
 
-    const changeComplete = (id) =>{
-        console.log('todo: cambiar estado de una tarea')
+    function completeTask(task){
+        console.log('complete this task:', task)
+        const index = tasks.indexOf(task);
+        const tempTask = [...tasks];
+        tempTask[index].completed = !tempTask[index].completed;
+        //actualizaremos el estado del componente, adermas actualiza la iteracion y muesta la tarea actualizada
+        setTasks(tempTask);
+
+    }
+
+    function deleteTasks(task){
+        console.log('complete this task:', task)
+        const index = tasks.indexOf(task);
+        const tempTask = [...tasks];
+        tempTask.splice(index, 1);
+        setTasks(tempTask);
     }
 
     return (
@@ -56,7 +70,14 @@ const TaskListComponent = () => {
                             <tbody>
                                 { tasks.map((task, index) => {
                                     return(
-                                        <TaskComponent key={index} task={task}> </TaskComponent>  
+                                        <TaskComponent 
+                                            key={index} 
+                                            task={task}
+                                            complete={completeTask}
+                                            deleted={deleteTasks}
+                                            > 
+                                        
+                                        </TaskComponent>  
                                     )
                                 })}
 

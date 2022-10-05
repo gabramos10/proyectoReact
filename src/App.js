@@ -19,7 +19,7 @@ function App() {
         <GreetingF name="Gabriel">         
         </GreetingF>
         componente de listado de tareas */}
-        {/* <TaskListComponent></TaskListComponent> */}
+        <TaskListComponent></TaskListComponent>
 
 
 
@@ -36,7 +36,7 @@ function App() {
       {/* </header> */}
 
       {/**gestion de eventos */}
-      <Father></Father>
+      {/* <Father></Father> */}
     </div>
   );
 }
