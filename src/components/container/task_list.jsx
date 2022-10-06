@@ -46,6 +46,14 @@ const TaskListComponent = () => {
         setTasks(tempTask);
     }
 
+    function addTask(task){
+        console.log('complete this task:', task)
+        const index = tasks.indexOf(task);
+        const tempTask = [...tasks];
+        tempTask.push(task);
+        setTasks(tempTask);
+    }
+
     return (
         <div>
             <div className='col-12'>
@@ -86,11 +94,11 @@ const TaskListComponent = () => {
                             </tbody>                        
                         </table>
                     </div>
-                    <TaskForm></TaskForm>
+                    
                 </div>            
             </div>
             {/*todo: aplicar un for/map para renderizar una lista*/}
-              
+            <TaskForm add={addTask}></TaskForm>
         </div>
     );
 };
