@@ -9,12 +9,12 @@ import { LEVELS } from '../../models/levels.enum';
 
 const TaskComponent = ({ task, complete, deleted }) => {
 
-    useEffect(() => {
-        console.log('tarea creada');
-        return () => {
-        console.log(`task: ${task.name} is going to unmount`);
-        };
-    }, [task]);
+    // useEffect(() => {
+    //     console.log('tarea creada');
+    //     return () => {
+    //     console.log(`task: ${task.name} is going to unmount`);
+    //     };
+    // }, [task]);
 
     /**
      * funcion that return a badge
