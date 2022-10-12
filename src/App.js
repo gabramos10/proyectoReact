@@ -9,6 +9,7 @@ import Ejemplo4 from './hooks/Ejemplo4';
 import GreetingStyled from './components/pure/greetingStyled';
 import Father from './components/container/father';
 import ContacList from './ejercicios/ContacList';
+import OptionalRender from './components/pure/optionalRender';
 
 function App() {
   return (
@@ -20,9 +21,14 @@ function App() {
         <GreetingF name="Gabriel">         
         </GreetingF>
         componente de listado de tareas */}
-        <TaskListComponent></TaskListComponent>
+        {/* <TaskListComponent></TaskListComponent> */}
 
         {/* <ContacList></ContacList> */}
+
+        
+        {/**ejemplo de renderizado condicional*/}
+        <OptionalRender></OptionalRender>
+
 
 
 
