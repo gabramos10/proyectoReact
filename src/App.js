@@ -10,6 +10,7 @@ import GreetingStyled from './components/pure/greetingStyled';
 import Father from './components/container/father';
 import ContacList from './ejercicios/ContacList';
 import OptionalRender from './components/pure/optionalRender';
+import LoginFormik from './components/pure/forms/loginFormik';
 
 function App() {
   return (
@@ -21,7 +22,7 @@ function App() {
         <GreetingF name="Gabriel">         
         </GreetingF>
         componente de listado de tareas */}
-        <TaskListComponent></TaskListComponent>
+        {/* <TaskListComponent></TaskListComponent> */}
 
         {/* <ContacList></ContacList> */}
 
@@ -30,6 +31,8 @@ function App() {
         {/* <OptionalRender></OptionalRender> */}
 
 
+        {/**ejemplo de uso de formik y yup*/}
+        <LoginFormik></LoginFormik>
 
 
         {/* <Ejemplo1></Ejemplo1> */}
