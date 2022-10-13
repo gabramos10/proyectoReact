@@ -21,13 +21,13 @@ function App() {
         <GreetingF name="Gabriel">         
         </GreetingF>
         componente de listado de tareas */}
-        {/* <TaskListComponent></TaskListComponent> */}
+        <TaskListComponent></TaskListComponent>
 
         {/* <ContacList></ContacList> */}
 
         
         {/**ejemplo de renderizado condicional*/}
-        <OptionalRender></OptionalRender>
+        {/* <OptionalRender></OptionalRender> */}
 
 
 
