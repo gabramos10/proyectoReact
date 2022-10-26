@@ -11,6 +11,7 @@ import Father from './components/container/father';
 import ContacList from './ejercicios/ContacList';
 import OptionalRender from './components/pure/optionalRender';
 import LoginFormik from './components/pure/forms/loginFormik';
+import RegisterFormik from './components/pure/forms/registerFormik';
 
 function App() {
   return (
@@ -32,7 +33,8 @@ function App() {
 
 
         {/**ejemplo de uso de formik y yup*/}
-        <LoginFormik></LoginFormik>
+        {/* <LoginFormik></LoginFormik> */}
+        <RegisterFormik></RegisterFormik>
 
 
         {/* <Ejemplo1></Ejemplo1> */}
